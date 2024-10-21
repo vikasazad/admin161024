@@ -10,7 +10,7 @@ import { Clock, User } from "lucide-react";
 import StatusChip from "@/components/ui/StatusChip";
 import { Badge } from "@/components/ui/badge";
 
-const Maintenance = ({ data, status }: { data: any; status: any }) => {
+const Maintenance = ({ data }: { data: any; status: any }) => {
   const [roomData, setRoomData] = useState([]);
 
   useEffect(() => {

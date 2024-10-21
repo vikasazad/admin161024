@@ -12,7 +12,7 @@ import { Clock, Users } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 
-const Reserved = ({ data, status }: { data: any; status: string }) => {
+const Reserved = ({ data }: { data: any; status: string }) => {
   const [tableData, setTableData] = useState([]);
 
   useEffect(() => {
