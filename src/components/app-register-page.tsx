@@ -1,28 +1,35 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { useRouter } from "next/navigation"
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card"
-import { PasswordStrength } from "@/components/password-strength"
+import { useState } from "react";
+import { useRouter } from "next/navigation";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import {
+  Card,
+  CardHeader,
+  CardTitle,
+  CardDescription,
+  CardContent,
+  CardFooter,
+} from "@/components/ui/card";
+// import { PasswordStrength } from "@/components/password-strength"
 
 export function Page() {
-  const [isLoading, setIsLoading] = useState(false)
-  const router = useRouter()
+  const [isLoading, setIsLoading] = useState(false);
+  const router = useRouter();
 
   async function onSubmit(event: React.SyntheticEvent) {
-    event.preventDefault()
-    setIsLoading(true)
+    event.preventDefault();
+    setIsLoading(true);
 
     // Here you would typically send the form data to your backend
     // For this example, we'll just simulate a delay
     setTimeout(() => {
-      setIsLoading(false)
-      router.push("/dashboard")
-    }, 3000)
+      setIsLoading(false);
+      router.push("/dashboard");
+    }, 3000);
   }
 
   return (
@@ -51,7 +58,7 @@ export function Page() {
                   disabled={isLoading}
                 />
               </div>
-              <PasswordStrength />
+              {/* <PasswordStrength /> */}
               <Button disabled={isLoading}>
                 {isLoading && (
                   <svg
@@ -114,5 +121,5 @@ export function Page() {
         </CardFooter>
       </Card>
     </div>
-  )
+  );
 }

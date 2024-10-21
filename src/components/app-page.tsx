@@ -20,7 +20,6 @@ import {
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { CalendarDateRangePicker } from "@/components/date-range-picker";
 import { MainNav } from "@/components/main-nav";
-import { Overview } from "@/components/chart";
 import { RecentSales } from "@/components/recent-sales";
 import { Search } from "@/components/search";
 import TeamSwitcher from "@/components/team-switcher";
@@ -124,9 +123,7 @@ export function Page() {
                 <CardHeader>
                   <CardTitle>Overview</CardTitle>
                 </CardHeader>
-                <CardContent className="pl-2">
-                  <Overview />
-                </CardContent>
+                <CardContent className="pl-2"></CardContent>
               </Card>
               <Card className="col-span-3">
                 <CardHeader>
