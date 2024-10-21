@@ -12,7 +12,7 @@ import { Calendar, Clock, Coffee, Users, Wifi } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 
-const DayCheckIn = ({ data, status }: { data: any; status: string }) => {
+const DayCheckIn = ({ data }: { data: any; status: string }) => {
   const [roomData, setRoomData] = useState([]);
 
   useEffect(() => {

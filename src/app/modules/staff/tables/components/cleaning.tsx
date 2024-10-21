@@ -10,7 +10,7 @@ import { Clock, User } from "lucide-react";
 import StatusChip from "@/components/ui/StatusChip";
 import { Badge } from "@/components/ui/badge";
 
-const Cleaning = ({ data, status }: { data: any; status: any }) => {
+const Cleaning = ({ data }: { data: any; status: any }) => {
   const [tableData, setTableData] = useState([]);
 
   useEffect(() => {
